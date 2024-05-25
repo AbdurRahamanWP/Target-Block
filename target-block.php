@@ -25,8 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_target_block_block_init() {
-	register_block_type( __DIR__ . '/build/block1' );
-	register_block_type( __DIR__ . '/build/block2' );
 	register_block_type( __DIR__ . '/build/title' );
+	register_block_type( __DIR__ . '/build/content' );
 }
 add_action( 'init', 'create_block_target_block_block_init' );
