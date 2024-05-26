@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!****************************!*\
-  !*** ./src/block1/view.js ***!
+  !*** ./src/block2/view.js ***!
   \****************************/
 /**
  * Use this file for JavaScript code that you want to run in the front-end
