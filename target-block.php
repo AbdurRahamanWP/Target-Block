@@ -29,3 +29,17 @@ function create_block_target_block_block_init() {
 	register_block_type( __DIR__ . '/build/content' );
 }
 add_action( 'init', 'create_block_target_block_block_init' );
+
+
+add_filter( 'block_categories_all' , function( $categories ) {
+
+    // Adding a new category.
+	$categories[] = array(
+		'slug'  => 'TargetBlock',
+		'title' => 'Target Block'
+	);
+
+	return $categories;
+} );
+
+

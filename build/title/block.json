@@ -4,12 +4,19 @@
   "name": "create-block/title",
   "version": "0.1.0",
   "title": "Target Title",
-  "category": "widgets",
+  "category": "TargetBlock",
   "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "description": "This Is simple Title Guttenburg Block",
+  "keywords": [
+    "Title Block",
+    "Target Title",
+    "Title"
+  ],
   "example": {},
   "supports": {
-    "html": false
+    "html": true,
+    "align": true,
+    "anchor": true
   },
   "textdomain": "target-block",
   "editorScript": "file:./index.js",

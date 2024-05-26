@@ -258,7 +258,7 @@ module.exports = window["wp"]["i18n"];
   \********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/content","version":"0.1.0","title":"Target Team","category":"widgets","icon":"smiley","description":"This is Target Team Block","example":{},"supports":{"html":false},"textdomain":"target-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/content","version":"0.1.0","title":"Target Team","category":"TargetBlock","icon":"smiley","description":"This is Target Team Block","keywords":["Teams","Target Team","Team Block"],"example":{},"supports":{"html":true,"align":true},"textdomain":"target-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

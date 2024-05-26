@@ -4,12 +4,18 @@
 	"name": "create-block/content",
 	"version": "0.1.0",
 	"title": "Target Team",
-	"category": "widgets",
+	"category": "TargetBlock",
 	"icon": "smiley",
 	"description": "This is Target Team Block",
+	"keywords": [
+		"Teams",
+		"Target Team",
+		"Team Block"
+	  ],
 	"example": {},
 	"supports": {
-		"html": false
+		"html": true,
+		"align": true
 	},
 	"textdomain": "target-block",
 	"editorScript": "file:./index.js",
