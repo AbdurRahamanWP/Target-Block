@@ -13,6 +13,20 @@
     "Team Block"
   ],
   "example": {},
+  "attributes": {
+    "NameColor": {
+      "type": "string",
+      "default": "#1a1919"
+    },
+    "DesignationColor": {
+      "type": "string",
+      "default": "#1a1919"
+    },
+    "ContentColor": {
+      "type": "string",
+      "default": "#f2f2f2"
+    }
+  },
   "supports": {
     "html": true,
     "align": true

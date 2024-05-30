@@ -16,7 +16,11 @@
   "supports": {
     "html": true,
     "align": true,
-    "anchor": true
+    "anchor": true,
+    "color": {
+      "link": true,
+      "gradients": true
+    }
   },
   "textdomain": "target-block",
   "editorScript": "file:./index.js",

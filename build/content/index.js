@@ -31,6 +31,30 @@ function Edit({
   attributes,
   setAttributes
 }) {
+  const {
+    NameColor,
+    DesignationColor,
+    ContentColor
+  } = attributes;
+  const colorSettings = [{
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Name Color', 'target-block'),
+    color: NameColor,
+    onChange: value => setAttributes({
+      NameColor: value
+    })
+  }, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Designation Color', 'target-block'),
+    color: DesignationColor,
+    onChange: value => setAttributes({
+      DesignationColor: value
+    })
+  }, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Content Color', 'target-block'),
+    color: ContentColor,
+    onChange: value => setAttributes({
+      ContentColor: value
+    })
+  }];
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
     className: 'item'
   });
@@ -67,7 +91,15 @@ function Edit({
       src: attributes.authorImage,
       alt: "Author"
     }))
-  }))));
+  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Color settings', 'target-block'),
+    initialOpen: false
+  }, colorSettings.map((palette, i) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPaletteControl, {
+    key: i,
+    label: palette.label,
+    value: palette.color,
+    onChange: palette.onChange
+  })))));
 }
 
 /***/ }),
@@ -155,7 +187,10 @@ function save({
     authorName,
     designation,
     reviewContents,
-    authorImage
+    authorImage,
+    NameColor,
+    DesignationColor,
+    ContentColor
   } = attributes;
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
@@ -258,7 +293,7 @@ module.exports = window["wp"]["i18n"];
   \********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/content","version":"0.1.0","title":"Target Team","category":"TargetBlock","icon":"smiley","description":"This is Target Team Block","keywords":["Teams","Target Team","Team Block"],"example":{},"supports":{"html":true,"align":true},"textdomain":"target-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/content","version":"0.1.0","title":"Target Team","category":"TargetBlock","icon":"smiley","description":"This is Target Team Block","keywords":["Teams","Target Team","Team Block"],"example":{},"attributes":{"NameColor":{"type":"string","default":"#1a1919"},"DesignationColor":{"type":"string","default":"#1a1919"},"ContentColor":{"type":"string","default":"#f2f2f2"}},"supports":{"html":true,"align":true},"textdomain":"target-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

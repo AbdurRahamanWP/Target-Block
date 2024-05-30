@@ -5,7 +5,7 @@ export default function save( { attributes } ) {
 
 
 	const blockProps = useBlockProps.save({className: 'item'});
-    const { authorName, designation, reviewContents, authorImage } = attributes;
+    const { authorName, designation, reviewContents, authorImage , NameColor, DesignationColor, ContentColor } = attributes;
 
 
 	
