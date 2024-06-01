@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/title/edit.js":
-/*!***************************!*\
-  !*** ./src/title/edit.js ***!
-  \***************************/
+/***/ "./src/textarea/edit.js":
+/*!******************************!*\
+  !*** ./src/textarea/edit.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/title/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/textarea/editor.scss");
 
 
 
@@ -33,70 +33,31 @@ function Edit({
       content: newContent
     });
   };
-
-  // 	<Toolbar label={ __('Change heading tag', 'target-block') }>
-  //     <ToolbarGroup
-  //         isCollapsed={ true }
-  //         controls={ [
-  //             {
-  //                 tag: 'h1',
-  //                 label: __('Heading 1', 'target-block'),
-  //             },
-  //             {
-  //                 tag: 'h2',
-  //                 label: __('Heading 2', 'target-block'),
-  //             },
-  //             {
-  //                 tag: 'h3',
-  //                 label: __('Heading 3', 'target-block'),
-  //             },
-  //             {
-  //                 tag: 'h4',
-  //                 label: __('Heading 4', 'target-block'),
-  //             },
-  //             {
-  //                 tag: 'h5',
-  //                 label: __('Heading 5', 'target-block'),
-  //             },
-  //             {
-  //                 tag: 'h6',
-  //                 label: __('Heading 6', 'target-block'),
-  //             }
-  //         ].map((tag) => {
-  //             return {
-  //                 title: tag.label,
-  //                 isActive: headingTag === tag.tag,
-  //                 onClick: () => setAttributes({'headingTag': tag.tag}),
-  //             }
-  //         }) }
-  //     />
-  // </Toolbar>
-
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     ...blockProps,
     tagName: "p",
     onChange: onChangeContent,
     allowedFormats: ['core/bold', 'core/italic'],
     value: attributes.content,
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Target Title Write your text...')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Please Enter Your Content Hear...')
   });
 }
 
 /***/ }),
 
-/***/ "./src/title/index.js":
-/*!****************************!*\
-  !*** ./src/title/index.js ***!
-  \****************************/
+/***/ "./src/textarea/index.js":
+/*!*******************************!*\
+  !*** ./src/textarea/index.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/title/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/title/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/title/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/title/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/textarea/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/textarea/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/textarea/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/textarea/block.json");
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
@@ -138,10 +99,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/title/save.js":
-/*!***************************!*\
-  !*** ./src/title/save.js ***!
-  \***************************/
+/***/ "./src/textarea/save.js":
+/*!******************************!*\
+  !*** ./src/textarea/save.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -170,10 +131,10 @@ function save({
 
 /***/ }),
 
-/***/ "./src/title/editor.scss":
-/*!*******************************!*\
-  !*** ./src/title/editor.scss ***!
-  \*******************************/
+/***/ "./src/textarea/editor.scss":
+/*!**********************************!*\
+  !*** ./src/textarea/editor.scss ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -182,10 +143,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/title/style.scss":
-/*!******************************!*\
-  !*** ./src/title/style.scss ***!
-  \******************************/
+/***/ "./src/textarea/style.scss":
+/*!*********************************!*\
+  !*** ./src/textarea/style.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -234,13 +195,13 @@ module.exports = window["wp"]["i18n"];
 
 /***/ }),
 
-/***/ "./src/title/block.json":
-/*!******************************!*\
-  !*** ./src/title/block.json ***!
-  \******************************/
+/***/ "./src/textarea/block.json":
+/*!*********************************!*\
+  !*** ./src/textarea/block.json ***!
+  \*********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/title","version":"0.1.0","title":"Target Title","category":"TargetBlock","icon":"smiley","description":"This Is simple Title Guttenburg Block","keywords":["Title Block","Target Title","Title"],"example":{},"supports":{"html":true,"align":true,"anchor":true,"color":{"link":true,"gradients":true}},"textdomain":"target-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/textarea","version":"0.1.0","title":"Target Textarea","category":"TargetBlock","icon":"smiley","description":"This Is simple Textarea Guttenburg Block","keywords":["Content Block","Target Content","Content","Textarea"],"example":{},"supports":{"html":true,"align":true,"anchor":true,"color":{"link":true,"gradients":true}},"textdomain":"target-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
@@ -354,8 +315,8 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"title/index": 0,
-/******/ 			"title/style-index": 0
+/******/ 			"textarea/index": 0,
+/******/ 			"textarea/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -405,7 +366,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["title/style-index"], () => (__webpack_require__("./src/title/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["textarea/style-index"], () => (__webpack_require__("./src/textarea/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

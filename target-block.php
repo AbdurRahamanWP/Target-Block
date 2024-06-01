@@ -26,7 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function create_block_target_block_block_init() {
 	register_block_type( __DIR__ . '/build/title' );
-	register_block_type( __DIR__ . '/build/content' );
+	register_block_type( __DIR__ . '/build/textarea' );
+	register_block_type( __DIR__ . '/build/team' );
 }
 add_action( 'init', 'create_block_target_block_block_init' );
 
