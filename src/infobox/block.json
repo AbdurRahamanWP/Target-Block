@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/infobox",
+	"version": "0.1.0",
+	"title": "Target Info Box",
+	"category": "TargetBlock",
+	"icon": "smiley",
+	"description": "This is Target Info Box Block",
+	"keywords": [
+		"Info Box",
+		"Target Info Box",
+		"Service Box Block"
+	  ],
+	"example": {},
+    "attributes": {
+		"NameColor": {
+			"type": "string",
+			"default": "#1a1919"
+		},
+		"DesignationColor": {
+			"type": "string",
+			"default": "#1a1919"
+		},
+		"ContentColor": {
+			"type": "string",
+			"default": "#f2f2f2"
+		}
+
+	},
+
+	"supports": {
+		"html": true,
+		"align": true
+	},
+	"textdomain": "target-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
